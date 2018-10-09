@@ -42,6 +42,7 @@ public class Entradas extends PlantillasFiltro implements DialogInterface.OnClic
         super.onCreate(savedInstanceState);
       //codigo herendando plantillas
       //prueba
+
       try {
           this.contenido.setLayoutResource(R.layout.activity_entradas);
           this.binding= DataBindingUtil.getBinding(this.bindingPlantilla.contenidoContenido.getViewStub().inflate());
