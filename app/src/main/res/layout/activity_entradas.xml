@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+  <data>
+    <import type="android.view.View">
+    </import>
+    <variable name="entradas" type="alertaspa.com.mx.condominio.Entradas"></variable>
+  </data>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+
+         <android.support.design.widget.TextInputLayout
+            android:id="@+id/panelPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <EditText
+              android:id="@+id/entradasPlaca"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:imeOptions="flagNoExtractUi"
+              android:hint=" Placas "
+              android:inputType="text"
+              android:text="@={entradas.registro.placas}"
+           />
+        </android.support.design.widget.TextInputLayout>
+
+         </LinearLayout>
+
+         <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick='@{(view)->entradas.doAceptar(view,entradas.registro.placas)}'
+            android:text="Buscar Placa"
+         />
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=" Marca y Modelo: "
+            />
+
+            <EditText
+               android:id="@+id/entradasModelo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               android:text="@={entradas.registro.marca}"
+
+            />
+        </LinearLayout>
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" Color: "
+           />
+
+           <EditText
+              android:id="@+id/entradasColor"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="text"
+              android:text="@={entradas.registro.color}"
+            />
+
+        </LinearLayout>
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" Estatus del vehículo: "
+        />
+        <EditText
+           android:id="@+id/entradasEstatus"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text"
+           android:text="@={entradas.registro.estatusVehiculo}"
+        />
+      </LinearLayout>
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" Interior: "
+        />
+        <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+           android:text="@={entradas.registro.interior}"
+        />
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" Teléfono: "
+        />
+        <EditText
+           android:id="@+id/entradasTelefono"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text"
+           android:text="@={entradas.registro.telefono}"
+        />
+      </LinearLayout>
+
+      <EditText
+         android:id="@+id/entradasResultado"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="text"
+       />
+
+    </LinearLayout>
+
+</layout>

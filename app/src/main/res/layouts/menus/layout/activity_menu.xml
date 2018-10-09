@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menus.backing.Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/botonRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="doirEntradas"
+                    android:text="Registro de Visitantes" />
+
+                <Button
+                    android:id="@+id/botonAltacondominos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alta de Condominos" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/botonAltavisitantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alta de Visitantes" />
+
+                <Button
+                    android:id="@+id/botonAverque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A ver qué se me ocurre" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

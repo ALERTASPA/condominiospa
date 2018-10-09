@@ -1,0 +1,86 @@
+<?Envipe2018.db.xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#90a4ae</color>
+  <color name="colorPrimaryDark">#62757f</color>
+  <color name="colorAccent">#4f83cc</color>
+  <color name="background">#ffffff</color>
+
+
+
+  <color name="colorBlanco">#FFFFFF</color>
+  <color name="colorNegro">#000000</color>
+  <color name="colorNaranja">#ff8000</color>
+  <color name="colorGray">#e2e2e2</color>
+  <color name="colorGrayLow">#f2f2f2</color>
+  <color name="colorRojo">#ff0000</color>
+  <color name="colorGrayDark">#979797</color>
+  <color name="white">#ffffff</color>
+
+  <color name="primaryColor">#90a4ae</color>
+  <color name="primaryLightColor">#c1d5e0</color>
+  <color name="primaryDarkColor">#62757f</color>
+  <color name="secondaryColor">#01579b</color>
+  <color name="secondaryLightColor">#4f83cc</color>
+  <color name="secondaryDarkColor">#002f6c</color>
+  <color name="primaryTextColor">#000000</color>
+  <color name="secondaryTextColor">#90a4ae</color>
+  <color name="buttonColor">#18acdd</color>
+
+  <color name="colorPrimario">#673ab7</color>
+  <color name="colorLuz">#9a67ea</color>
+  <color name="colorOscuro">#320b86</color>
+
+
+
+  <!--- NAVVIEW HEADER -->
+  <color name="navHeaderTexto">#FFFFFF</color>
+  <color name="navHeaderFondoBase">#01579b</color>
+  <color name="navHeaderFondoMarca">#4f83cc</color>
+
+  <!--- NAVVIEW MENU -->
+  <color name="navMenuTextoOpcion"></color>
+  <color name="navMenuTextoTitulo"></color>
+  <color name="navMenuFondoGeneral">#FAFAFA</color>
+  <color name="navMenuFondoOpcion"></color>
+  <color name="navMenuIcoNormal">#ABABAB</color>
+
+  <!-- COLOR BASE -->
+  <color name="xTransparent">#00ffffff</color>
+
+  <color name="xPrimary">#616161</color>
+  <color name="xPrimaryLight">#8e8e8e</color>
+  <color name="xPrimaryDark">#373737</color>
+  <color name="xPrimaryDarkAlpha">#b9373737</color>>
+
+  <color name="xSecondary">#0277bd</color>
+  <color name="xSecondaryLight">#58a5f0</color>
+  <color name="xSecondaryDark">#004c8c</color>
+
+  <color name="verde">#43a047</color>
+  <color name="verdeLight">#76d275</color>
+  <color name="verdeDark">#00701a</color>
+
+  <color name="xAnalogous">#FF5E58</color>
+
+
+  <!--
+  <color name="xSecondary">#ff5252</color>
+  <color name="xSecondaryLight">#ff867f</color>
+  <color name="xSecondaryDark">#c50e29</color>
+
+  <color name="xAnalogous">#FFC57F</color>
+  -->
+  
+  <color name="xActionNegative">#f44336</color>
+  <color name="xActionPositive">#8BC34A</color>
+  <color name="xActionNeutral">#9E9E9E</color>
+  <color name="xActionNormal">#4f83cc</color>
+
+  <!--- SEMAFOROS -->
+
+  <color name="semaforoGris">#BDBDBD</color>
+  <color name="semaforoAmarillo">#FFCA28</color>
+  <color name="semaforoNaranja">#ff8000</color>
+  <color name="semaforoVerde">#66BB6A</color>
+  <color name="semaforoRojo">#EF5350</color>
+</resources>

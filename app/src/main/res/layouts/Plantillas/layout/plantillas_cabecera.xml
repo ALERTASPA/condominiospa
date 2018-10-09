@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+  <data>
+      <variable name="plantillasFiltro" type="alertaspa.com.mx.condominio.plantillas.backing.PlantillasFiltro"/>
+  </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/plantillasToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/small_space">
+
+            <ImageView
+                android:id="@+id/actionbarOpenNavDrawer"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:onClick="@{plantillasFiltro::doMenuLateral}"
+                android:shadowColor="@color/colorBlanco"
+                android:src="@drawable/ic_menu" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tituloPagina"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text='@{plantillasFiltro.attrs["titulo"]}'
+            android:textColor="@color/cardview_light_background"
+            android:textSize="@dimen/title_font_size" />
+    </LinearLayout>
+</layout>

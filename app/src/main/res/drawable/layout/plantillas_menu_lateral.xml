@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iktan="http://schemas.android.com/tools">
+    <data>
+
+        <variable name="plantillasFiltro" type="alertaspa.com.mx.condominio.plantillas.backing.PlantillasFiltro"/>
+    </data>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Opcion 1: dialogo de alerta"
+           android:onClick="@{plantillasFiltro::doOpcion1}"
+          />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opcion 2: dialogo de progreso"
+            android:onClick="@{plantillasFiltro::doOpcion2}"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opcion 3"
+            android:onClick="@{plantillasFiltro::doOpcion3}"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opcion 4: Notificaciones"
+            android:onClick="@{plantillasFiltro::doOpcion4}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camara"
+            android:onClick="@{plantillasFiltro::doOpcion6}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu principal"
+            android:onClick="@{plantillasFiltro::doOpcion5}"/>
+
+    </LinearLayout>
+
+</layout>

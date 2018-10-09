@@ -1,0 +1,68 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="plantillasFiltro"
+            type="alertaspa.com.mx.condominio.plantillas.backing.PlantillasFiltro" />
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/lateralDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/plantillaCabecera"
+                    layout="@layout/plantillas_cabecera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    bind:plantillasFiltro="@{plantillasFiltro}" />
+
+                <ViewStub
+                    android:id="@+id/contenidoContenido"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/plantillasPie"
+                layout="@layout/plantillas_pie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom" />
+        </RelativeLayout>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/lateralNavView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorGray">
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/plantillas_menu_lateral"
+                bind:plantillasFiltro="@{plantillasFiltro}" />
+
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+</layout>

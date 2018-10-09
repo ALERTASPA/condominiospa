@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+  <data>
+
+    <variable name="plantillasFiltro" type="alertaspa.com.mx.condominio.plantillas.backing.PlantillasFiltro"/>
+  </data>
+  <RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:onClick="@{plantillasFiltro::doAceptar}"/>
+  </RelativeLayout>
+</layout>
