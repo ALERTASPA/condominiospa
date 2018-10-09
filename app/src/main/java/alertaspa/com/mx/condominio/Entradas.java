@@ -41,7 +41,7 @@ public class Entradas extends PlantillasFiltro implements DialogInterface.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
       //codigo herendando plantillas
-      //prueba
+      //quitar prueba
 
       try {
           this.contenido.setLayoutResource(R.layout.activity_entradas);
