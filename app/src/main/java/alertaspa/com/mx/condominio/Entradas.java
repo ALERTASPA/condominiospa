@@ -56,6 +56,7 @@ public class Entradas extends PlantillasFiltro implements DialogInterface.OnClic
         Log.e("Entradas",e.getMessage());
       }//try-except
 
+      //quitando codigo
        /*
        //Codigo sin heredar de plantillas
        try {
