@@ -41,10 +41,6 @@ public class Entradas extends PlantillasFiltro implements DialogInterface.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
       //codigo herendando plantillas
-      //quitar prueba
-      // muy bien y tu
-      //nno lose
-
       try {
           this.contenido.setLayoutResource(R.layout.activity_entradas);
           this.binding= DataBindingUtil.getBinding(this.bindingPlantilla.contenidoContenido.getViewStub().inflate());
@@ -55,8 +51,6 @@ public class Entradas extends PlantillasFiltro implements DialogInterface.OnClic
       catch (Exception e){
         Log.e("Entradas",e.getMessage());
       }//try-except
-
-      //quitando codigo
        /*
        //Codigo sin heredar de plantillas
        try {
