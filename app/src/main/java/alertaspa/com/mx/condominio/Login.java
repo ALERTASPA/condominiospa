@@ -18,6 +18,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         try {
         setContentView(R.layout.activity_login);
+            Toast.makeText(this, "hola", Toast.LENGTH_SHORT).show();
         }
         catch(Exception e){
           Log.e("Login",e.getMessage());
