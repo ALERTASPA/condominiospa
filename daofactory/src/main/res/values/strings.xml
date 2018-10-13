@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">DaoFactory</string>
+  <string name="vistas">com/mx/db/xml/vistas.xml</string>
+  <string name="sentencias">com/mx/db/xml/sentencias.xml</string>
+  <string name="mensajes">com/mx/db/xml/mensajes.xml</string>
+  <string name="bd_name">base</string>
+  <string name="modelo_assets">com/mx/db/</string>
+  <string name="trabajo_modelo">/work/modelo/</string>
+</resources>
