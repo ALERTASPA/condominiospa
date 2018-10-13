@@ -1,10 +1,14 @@
 package alertaspa.com.mx.condominio.camara;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,12 +31,32 @@ import alertaspa.com.mx.condominio.plantillas.backing.PlantillasFiltro;
 public class CamaraAccion extends PlantillasFiltro {
 
     private CamaraAccionBinding binding;
+    private static final String[] permissions = new String[]{
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA,
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.READ_EXTERNAL_STORAGE
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
             super.onCreate(savedInstanceState);
             this.contenido.setLayoutResource(R.layout.camara_accion);
+
+
+            /*checando permisos*/
+            for (int i =0; i<permissions.length-1;i++) {
+                int permissionCheck = ContextCompat.checkSelfPermission(this,  permissions[i]);
+                if (ContextCompat.checkSelfPermission(this,  permissions[i])   != PackageManager.PERMISSION_GRANTED) {
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(this, permissions[i])) {
+
+                    } //if
+                }//if
+            }//for
+            ActivityCompat.requestPermissions(this, permissions, 101);
+            /*fin*/
+
             this.binding= DataBindingUtil.getBinding(this.bindingPlantilla.contenidoContenido.getViewStub().inflate());
             this.binding.setCamaraAccion(this);
 
@@ -111,7 +135,7 @@ public class CamaraAccion extends PlantillasFiltro {
                 }
             }
             if (type == MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE){
-                mediaFile = new File(mediaStorageDir.getPath() + File.separator +  "foto.jpg");
+                mediaFile = new File(mediaStorageDir.getPath() + File.separator +  "foto2.jpg");
 
             } // if
         } // try
