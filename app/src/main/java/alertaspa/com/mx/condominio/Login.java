@@ -18,8 +18,6 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         try {
         setContentView(R.layout.activity_login);
-        //login
-
         }
         catch(Exception e){
           Log.e("Login",e.getMessage());
