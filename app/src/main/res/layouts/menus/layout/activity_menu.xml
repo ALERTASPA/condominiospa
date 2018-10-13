@@ -48,7 +48,9 @@
                     android:id="@+id/botonAverque"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="A ver qué se me ocurre" />
+                    android:text="Agregar casas"
+                    android:onClick="doirCasas"
+                    />
             </TableRow>
 
         </TableLayout>

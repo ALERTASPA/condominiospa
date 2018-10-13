@@ -8,6 +8,7 @@ import android.view.View;
 import alertaspa.com.mx.condominio.Entradas;
 import alertaspa.com.mx.condominio.R;
 import alertaspa.com.mx.condominio.Utileria;
+import alertaspa.com.mx.condominio.casas.backing.Casas;
 
 public class Menu extends AppCompatActivity {
 
@@ -20,6 +21,16 @@ public class Menu extends AppCompatActivity {
     public void doirEntradas(View view) {
         try {
             Utileria.irPagina(this, Entradas.class);
+        }//  try
+        catch (Exception e) {
+            Log.e("LoginNavegar", e.getMessage());
+        }
+
+    }
+
+    public void doirCasas(View view) {
+        try {
+            Utileria.irPagina(this, Casas.class);
         }//  try
         catch (Exception e) {
             Log.e("LoginNavegar", e.getMessage());

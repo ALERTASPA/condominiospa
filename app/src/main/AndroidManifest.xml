@@ -29,6 +29,7 @@
         <activity android:name=".Entradas" />
         <activity android:name=".plantillas.backing.PlantillasFiltro" />
         <activity android:name=".camara.CamaraAccion"></activity>
+        <activity android:name=".casas.backing.Casas" />
     </application>
 
 </manifest>
