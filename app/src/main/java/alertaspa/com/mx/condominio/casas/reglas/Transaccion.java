@@ -1,6 +1,6 @@
 package alertaspa.com.mx.condominio.casas.reglas;
 
-import alertaspa.com.mx.condominio.db.dtos.TcCasasDto;
+import alertaspa.com.mx.condominio.db.dto.TcCasasDto;
 import mx.org.dao.db.enums.EAccion;
 import mx.org.dao.db.reglas.DaoFactory;
 import mx.org.dao.db.reglas.IBaseTnx;

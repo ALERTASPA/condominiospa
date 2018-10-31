@@ -9,6 +9,7 @@ import alertaspa.com.mx.condominio.Entradas;
 import alertaspa.com.mx.condominio.R;
 import alertaspa.com.mx.condominio.Utileria;
 import alertaspa.com.mx.condominio.casas.backing.Casas;
+import alertaspa.com.mx.condominio.casas.backing.CasasFiltro;
 
 public class Menu extends AppCompatActivity {
 
@@ -30,7 +31,7 @@ public class Menu extends AppCompatActivity {
 
     public void doirCasas(View view) {
         try {
-            Utileria.irPagina(this, Casas.class);
+            Utileria.irPagina(this, CasasFiltro.class);
         }//  try
         catch (Exception e) {
             Log.e("LoginNavegar", e.getMessage());

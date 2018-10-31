@@ -29,7 +29,7 @@ public class PlantillasFiltro extends AppCompatActivity {
   protected PlantillasFiltroBinding bindingPlantilla;
   protected ViewStub contenido;
 
-  private Map<String,Object> attrs;
+  protected Map<String,Object> attrs;
 
     public void setAttrs(Map<String, Object> attrs) {
         this.attrs = attrs;
