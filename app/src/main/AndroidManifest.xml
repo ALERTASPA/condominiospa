@@ -7,8 +7,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
-
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -28,8 +27,9 @@
         <activity android:name=".menus.backing.Menu" />
         <activity android:name=".Entradas" />
         <activity android:name=".plantillas.backing.PlantillasFiltro" />
-        <activity android:name=".camara.CamaraAccion"></activity>
+        <activity android:name=".camara.CamaraAccion" />
         <activity android:name=".casas.backing.Casas" />
+        <activity android:name=".casas.backing.CasasFiltro"></activity>
     </application>
 
 </manifest>
