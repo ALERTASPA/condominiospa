@@ -1,0 +1,36 @@
+<base>
+  <dml>
+    <unit id="GreenDao">
+      <select id="registros">
+        select changes()
+      </select>
+    </unit>
+    <unit id="TcCasasDto">
+      <select id="row">
+        select
+          *
+        from
+          tc_casas
+      </select>
+      <select id="all">
+        select
+          id_casa id_key,
+          interior,
+          calle
+        from
+          tc_casas
+        where
+          {condicion}
+    </select>
+      <select id="identically">
+        select
+          *
+        from
+          tc_casas
+        where
+          interior= {interior}
+      </select>
+
+    </unit>
+  </dml>
+</base>

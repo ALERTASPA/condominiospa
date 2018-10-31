@@ -1,0 +1,9 @@
+﻿<base>
+  <dml>
+    <unit id="UAccesoDatos">
+      <mensaje id="fillUser001" title="Datos">
+        Ocurrió un error al intentar cargar los datos del usuario.
+      </mensaje>
+    </unit>
+  </dml>
+</base>

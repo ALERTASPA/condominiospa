@@ -1,0 +1,16 @@
+<base>
+  <dml>
+    <unit id="VistaEntidades">
+      <select id="entidad">
+        select
+    	  	descripcion
+        from
+    	  	tc_movil_configuraciones
+        inner join
+    	  	tc_movil_entidades
+				on
+					tc_movil_entidades.entidad=  tc_movil_configuraciones.entidad
+      </select>
+    </unit>
+  </dml>
+</base>
