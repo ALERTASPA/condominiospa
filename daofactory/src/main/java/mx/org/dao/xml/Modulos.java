@@ -90,14 +90,8 @@ public final class Modulos {
 
   private List<String> getModulos(){
     List<String> regresar = null;
-    String XMLS           = null;
-    String proyecto       = null;
-    String proyectoLocal  = null;
-	  String[] arrayXML     = null;
     try{
       regresar=new ArrayList<>();
-      proyecto = arrayXML[0];
-      proyectoLocal = arrayXML[1];
       regresar.add(UtileriasDao.getRutasDao().getMensajes());
       regresar.add(UtileriasDao.getRutasDao().getVistas());
       regresar.add(UtileriasDao.getRutasDao().getSentencias());
