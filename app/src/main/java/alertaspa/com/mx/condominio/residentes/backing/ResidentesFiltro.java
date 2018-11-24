@@ -2,6 +2,7 @@ package alertaspa.com.mx.condominio.residentes.backing;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,5 +38,10 @@ public class ResidentesFiltro extends PlantillasFiltro {
     catch (Exception e){
       Log.e("Entradas",e.getMessage());
     }//try-except
+  }
+
+  @Override
+  public ViewDataBinding getBinding() {
+    return null;
   }
 }

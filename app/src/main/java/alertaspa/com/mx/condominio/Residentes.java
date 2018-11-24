@@ -1,6 +1,7 @@
 package alertaspa.com.mx.condominio;
 
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -23,5 +24,10 @@ public class Residentes extends PlantillasFiltro {
     catch (Exception e){
       Log.e("Residentes",e.getMessage());
     }//try-except
+  }
+
+  @Override
+  public ViewDataBinding getBinding() {
+    return this.binding;
   }
 }

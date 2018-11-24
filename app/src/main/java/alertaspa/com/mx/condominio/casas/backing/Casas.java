@@ -1,12 +1,14 @@
 package alertaspa.com.mx.condominio.casas.backing;
 
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import alertaspa.com.mx.condominio.R;
+import alertaspa.com.mx.condominio.Utileria;
 import alertaspa.com.mx.condominio.casas.reglas.Transaccion;
 import alertaspa.com.mx.condominio.databinding.ActivityCasasBinding;
 import alertaspa.com.mx.condominio.db.dto.TcCasasDto;
@@ -46,12 +48,19 @@ public class Casas extends PlantillasFiltro {
     Transaccion transaccion= null;
     try{
       transaccion= new Transaccion(this.tcCasasDto);
-      if (transaccion.ejecutar(EAccion.AGREGAR))
+      if (transaccion.ejecutar(EAccion.AGREGAR)) {
         Toast.makeText(this, "Se registro correctamente", Toast.LENGTH_LONG).show();
+        Utileria.irPagina(this, CasasFiltro.class);
+      } // if
     } // try
     catch (Exception e){
       Log.e("Casas.Doaceptar",e.getMessage());
     }// catch
 
+  }
+
+  @Override
+  public ViewDataBinding getBinding() {
+    return this.binding;
   }
 }
