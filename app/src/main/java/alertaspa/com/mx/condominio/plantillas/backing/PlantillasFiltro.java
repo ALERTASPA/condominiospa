@@ -5,10 +5,12 @@ import alertaspa.com.mx.condominio.R;
 import alertaspa.com.mx.condominio.Utileria;
 import alertaspa.com.mx.condominio.camara.CamaraAccion;
 import alertaspa.com.mx.condominio.databinding.PlantillasFiltroBinding;
+import mx.org.dao.db.comun.dto.IBaseDto;
 import mx.org.dao.interfaces.IIktanAdapters;
 import alertaspa.com.mx.condominio.plantillas.reglas.Hilo;
 
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -119,7 +121,7 @@ public abstract class PlantillasFiltro extends AppCompatActivity implements IIkt
   }
 
   @Override
-  public void onItemSelectedLista(AdapterView<?> parent, View view, int position, long id) {
+  public void doSelect(IBaseDto iBaseDto, View view, ViewDataBinding viewDataBinding, Boolean isLongClic) {
 
   }
 }
