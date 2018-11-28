@@ -7,11 +7,13 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 import java.util.Map;
 
+import mx.org.dao.db.comun.dto.IBaseDto;
+
 
 public interface IIktanAdapters extends OnItemSelectedListener {
 
   ViewDataBinding getBinding();
   Map<String, Object> getAttrs();
-  void onItemSelectedLista(AdapterView<?> parent, View view, int position, long id);
+  void doSelect(IBaseDto iBaseDto, View view, ViewDataBinding viewDataBinding, Boolean isLongClic);
 
 }
