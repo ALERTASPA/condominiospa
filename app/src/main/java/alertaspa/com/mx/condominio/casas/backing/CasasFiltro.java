@@ -14,6 +14,7 @@ import alertaspa.com.mx.condominio.Utileria;
 import alertaspa.com.mx.condominio.databinding.CasasFiltroBinding;
 import alertaspa.com.mx.condominio.db.dto.TcCasasDto;
 import alertaspa.com.mx.condominio.plantillas.backing.PlantillasFiltro;
+import mx.org.dao.db.comun.dto.IBaseDto;
 import mx.org.dao.db.comun.sql.Entity;
 import mx.org.dao.db.reglas.DaoFactory;
 import mx.org.dao.libs.adaptadores.UIList;
@@ -90,6 +91,7 @@ public class CasasFiltro extends PlantillasFiltro implements AdapterView.OnItemS
       callesBd = DaoFactory.getInstance().toEntitySet("TcCasasDto","calles",attrs);
       calles = new ArrayList<>();
       calles.add("Seleccione");
+
       for (Entity item : callesBd)
         calles.add(item.get("calle").getData$());
       ArrayAdapter adaptador = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, calles);
@@ -118,7 +120,7 @@ public class CasasFiltro extends PlantillasFiltro implements AdapterView.OnItemS
   }
 
   @Override
-  public void onItemSelectedLista(AdapterView<?> parent, View view, int position, long id) {
-    Utileria.toast(this, "posicion: "+position+", idBD: "+id);
+  public void doSelect(IBaseDto iBaseDto, View view, ViewDataBinding viewDataBinding, Boolean isLongClic) {
+    Utileria.toast(this, "Calle : "+((TcCasasDto)iBaseDto).getCalle());
   }
 }
