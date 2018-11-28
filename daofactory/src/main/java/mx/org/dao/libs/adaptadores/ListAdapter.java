@@ -50,7 +50,7 @@ public class ListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
     try {
       item = (IBaseDto) this.lista.get(position);
       holderItem = (BaseViewHolder) viewHolder;
-      holderItem.bind(item, "Row", this.recyclerView, this);
+      holderItem.bind(item, "Row", this.recyclerView, this, this.activity);
     } // try
     catch (Exception e){
       Log.e("onBindViewHolder", e.getMessage());
