@@ -1,30 +1,27 @@
 package alertaspa.com.mx.condominio.plantillas.backing;
 
-import alertaspa.com.mx.condominio.Entradas;
 import alertaspa.com.mx.condominio.Login;
 import alertaspa.com.mx.condominio.R;
 import alertaspa.com.mx.condominio.Utileria;
 import alertaspa.com.mx.condominio.camara.CamaraAccion;
 import alertaspa.com.mx.condominio.databinding.PlantillasFiltroBinding;
+import mx.org.dao.interfaces.IIktanAdapters;
 import alertaspa.com.mx.condominio.plantillas.reglas.Hilo;
 
-import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewStub;
+import android.widget.AdapterView;
 import android.widget.Toast;
-
-import org.slf4j.helpers.Util;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class PlantillasFiltro extends AppCompatActivity {
+public abstract class PlantillasFiltro extends AppCompatActivity implements IIktanAdapters {
 
   protected PlantillasFiltroBinding bindingPlantilla;
   protected ViewStub contenido;
@@ -111,4 +108,18 @@ public class PlantillasFiltro extends AppCompatActivity {
     this.bindingPlantilla.lateralDrawerLayout.openDrawer(Gravity.LEFT);
   }
 
+  @Override
+  public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+  }
+
+  @Override
+  public void onNothingSelected(AdapterView<?> parent) {
+
+  }
+
+  @Override
+  public void onItemSelectedLista(AdapterView<?> parent, View view, int position, long id) {
+
+  }
 }

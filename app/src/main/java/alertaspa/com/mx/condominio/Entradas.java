@@ -6,6 +6,7 @@ import alertaspa.com.mx.condominio.databinding.ActivityEntradasBinding;
 import android.app.NotificationManager;
 import android.content.DialogInterface;
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -161,4 +162,8 @@ public class Entradas extends PlantillasFiltro implements DialogInterface.OnClic
         }// else
 
     }
+  @Override
+  public ViewDataBinding getBinding() {
+    return this.binding;
+  }
 }

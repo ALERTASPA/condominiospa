@@ -13,7 +13,7 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TableRow
@@ -48,9 +48,9 @@
                     android:id="@+id/botonAverque"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Agregar casas"
                     android:onClick="doirCasas"
-                    />
+                    android:text="Agregar casas" />
+
             </TableRow>
 
         </TableLayout>

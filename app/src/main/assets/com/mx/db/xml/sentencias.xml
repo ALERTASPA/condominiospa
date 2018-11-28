@@ -30,7 +30,12 @@
         where
           interior= {interior}
       </select>
-
+      <select id="calles">
+        select
+        distinct calle
+        from
+        tc_casas
+      </select>
     </unit>
   </dml>
 </base>

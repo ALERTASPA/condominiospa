@@ -3,6 +3,7 @@ package alertaspa.com.mx.condominio.camara;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
@@ -152,5 +153,10 @@ public class CamaraAccion extends PlantillasFiltro {
         } catch (Exception e) {
             Log.e("PlantillasFiltro",e.getMessage());
         }//try-catch
+    }
+
+    @Override
+    public ViewDataBinding getBinding() {
+        return this.binding;
     }
 }

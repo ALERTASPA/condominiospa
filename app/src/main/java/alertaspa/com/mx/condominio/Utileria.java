@@ -13,7 +13,7 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-
+import android.widget.Toast;
 
 
 public class Utileria {
@@ -79,4 +79,14 @@ public class Utileria {
             Log.e("Utileria",e.getMessage());
         } // catch
     } // addNotification
+
+    public static void toast(Context contexto, String mensaje){
+        try{
+            Toast.makeText(contexto,mensaje,Toast.LENGTH_LONG  ).show();
+        }
+        catch (Exception e){
+            Log.e("Utileria", e.getMessage());
+        }
+
+    }
 }
